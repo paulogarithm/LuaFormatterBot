@@ -1,0 +1,21 @@
+[package]
+name = "bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+regex = "1.10.2"
+serenity = { version = "0.11", default-features = false, features = [
+    "http",
+    "gateway",
+    "rustls_backend",
+    "native_tls_backend",
+    "builder",
+    "cache",
+    "client",
+    "collector",
+    "time",
+    "model",
+] }
+tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
