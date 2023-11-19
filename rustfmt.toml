@@ -1,0 +1,15 @@
+fn_params_layout = "Compressed" # Control the layout of parameters in function signatures.
+format_code_in_doc_comments = true # Format code snippet included in doc comments.
+imports_layout = "Horizontal" # Item layout inside a imports block.
+imports_granularity = "Item" # Controls how imports are structured in use statements. Imports will be merged or split to the configured level of granularity.
+normalize_comments = true # Convert /* */ comments to // comments where possible
+overflow_delimited_expr = true # When structs, slices, arrays, and block/array-like macros are used as the last argument in an expression list, allow them to overflow (like blocks/closures) instead of being indented on a new line.
+reorder_impl_items = true # Reorder impl items. type and const are put first, then macros and methods.
+reorder_imports = true # Reorder import and extern crate statements alphabetically in groups (a group is separated by a newline).
+group_imports = "StdExternalCrate" # Controls the strategy for how consecutive imports are grouped together. StdExternalCrate order: "std, core, alloc", external crates, "self, super, crate" imports.
+struct_lit_single_line = false # Put small struct literals on a single line.
+tab_spaces = 2 # Number of spaces per tab (pls plsplspls let's use 2 😢😭).
+use_field_init_shorthand = true # Use field initialize shorthand if possible.
+use_small_heuristics = "Max" # This option can be used to simplify the management and bulk updates of the granular width configuration, that respectively control when formatted constructs are multi-lined/vertical based on width.
+use_try_shorthand = true # Replace uses of the try! macro by the ? shorthand.
+wrap_comments = true # Break comments to fit on the line.
